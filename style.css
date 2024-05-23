@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #b1ce48;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 500px;
+    margin: 100px auto;
+    padding: 20px;
+    border: 20px solid #4CAF50;
+    border-radius: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+form input, form select {
+    display: block;
+    margin-bottom: 5px;
+    width: 100%;
+    padding: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    background-color:  #acca3d;
+    color: #4CAF50;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color:  #cddb9d;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+table th {
+    background-color:  #b1ce48;
+    color: rgb(255, 255, 255);
+}
+.contain {
+    display: flex;
+    overflow: hidden;
+    width: 80%;
+    border: 2px solid #333;
+}
+.slider {
+    display: flex;
+    animation: slide 10s linear infinite;
+}
+.slider img {
+    width: 200px;
+    height: 150px;
+    margin: 0 10px;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+    50% {
+        transform: translateX(calc(-100% + 200px));
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
